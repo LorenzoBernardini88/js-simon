@@ -19,15 +19,18 @@ function generaNum( numRandom ){ //Funzione che crea array numeri casuali .
         }
     }
     let container = document.getElementById('num_container');
-    container.innerHTML = `<span class="content">${numArr}</span>`;
+    container.innerHTML = `<span id="content">${numArr}</span>`;
 }
+
+
 generaNum(5);
 console.log(numArr);
-let numeriSpan = document.getElementsByClassName('content');
+let numeriSpan = document.getElementById('content');
+
 setTimeout ( memory , 5000);
 
 function memory (){
-    numeriSpan = '';
+    numeriSpan.innerHTML = '';
     let numArr2 = [];
     for(i=0; i<numArr.length; i++){
         let numeroUser = parseInt(prompt('Inserisci un numero compreso da 1 a 100'));
@@ -37,5 +40,6 @@ function memory (){
             i--;
         }
     }
-    
+    console.log(numArr2);
+    numeriSpan.innerHTML = numArr2;
 }
