@@ -9,7 +9,7 @@
 
 let numArr = [];
 
-function generaNum( numRandom ){
+function generaNum( numRandom ){ //Funzione che crea array numeri casuali .
 
     while( numArr.length < numRandom )
     {
@@ -18,8 +18,24 @@ function generaNum( numRandom ){
         numArr.push(numRandom);
         }
     }
+    let container = document.getElementById('num_container');
+    container.innerHTML = `<span class="content">${numArr}</span>`;
 }
-    
 generaNum(5);
-
 console.log(numArr);
+let numeriSpan = document.getElementsByClassName('content');
+setTimeout ( memory , 5000);
+
+function memory (){
+    numeriSpan = '';
+    let numArr2 = [];
+    for(i=0; i<numArr.length; i++){
+        let numeroUser = parseInt(prompt('Inserisci un numero compreso da 1 a 100'));
+        if(!numArr2.includes(numeroUser)){
+            numArr2.push(numeroUser);
+        }else{
+            i--;
+        }
+    }
+    
+}
