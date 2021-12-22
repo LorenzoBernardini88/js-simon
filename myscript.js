@@ -7,7 +7,7 @@
 
 //Svolgimento : 
 
-let numArr = [];
+let numArr = [];//creo array per numeri random creati dal pc .
 
 function generaNum( numRandom ){ //Funzione che crea array numeri casuali .
 
@@ -22,12 +22,11 @@ function generaNum( numRandom ){ //Funzione che crea array numeri casuali .
     container.innerHTML = `<span id="content">${numArr}</span>`;
 }
 
-
-generaNum(5);
+generaNum(5);//Richiamo funzione.
 console.log(numArr);
-let numeriSpan = document.getElementById('content');
+let numeriSpan = document.getElementById('content'); //Richiamo elemento span creato con funzione generaNum.
 
-setTimeout ( memory , 5000);
+setTimeout ( memory , 5000); //setTimeout per funzione memory.
 
 function memory (){
     numeriSpan.innerHTML = '';
@@ -42,4 +41,4 @@ function memory (){
     }
     console.log(numArr2);
     numeriSpan.innerHTML = numArr2;
-}
+}// Funzione memory genera numeri scelti dall'utente.
