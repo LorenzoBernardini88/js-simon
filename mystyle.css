@@ -1,11 +1,15 @@
 body{
     font-family: 'Bangers', cursive;
-    font-size:1.5rem;
+    font-size:2.5rem;
     text-align: center;
     color: black;
     overflow: hidden;
     word-spacing: 10px;
     letter-spacing: 3px;
+    line-height: 50px;
+    background: linear-gradient(-45deg,#fff,#b5b5b5,#a3a3a3,#b5b5b5,#fff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 #num_container{
@@ -20,6 +24,27 @@ body{
     box-shadow: 0 10px 5px 5px rgba(138, 176, 81, 0.2),
     inset 0 10px 15px rgba(138, 176, 81, 0.3),
     inset 0 -10px 15px rgba(188, 214, 150,0.3);
+    text-shadow:
+    0 -1px 0 white,
+    0 1px 0 white,
+    1px 0 0 white,
+    -1px 0 0 white,
+    0 0 5px rgba(138, 176, 81, 1),
+    0 0 15px rgba(138, 176, 81, 0.7);
+    color: #bdf26d;
 }
 
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
