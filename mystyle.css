@@ -1,15 +1,28 @@
 body{
     font-family: 'Bangers', cursive;
-    font-size:2.5rem;
+    font-size: 3.5rem;
+    height: 100vh;
     text-align: center;
     color: black;
     overflow: hidden;
     word-spacing: 10px;
     letter-spacing: 3px;
-    line-height: 50px;
-    background: linear-gradient(-45deg,#fff,#b5b5b5,#a3a3a3,#b5b5b5,#fff);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    line-height: 70px;
+    background:transparent;
+    /* animation: gradient 15s ease infinite; */
+}
+body::before{
+    background-image: url('sfondobello.gif');
+    background-size: cover;
+    filter: blur(10px);
+    content: '';
+    z-index: -1;
+    position: absolute;
+    left:0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    /* transform: scale(1.5); */
 }
 
 #num_container{
@@ -21,7 +34,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 10px 5px 5px rgba(138, 176, 81, 0.2),
+    box-shadow: 0 0 30px 5px rgba(255,255,255, 1),
     inset 0 10px 15px rgba(138, 176, 81, 0.3),
     inset 0 -10px 15px rgba(188, 214, 150,0.3);
     text-shadow:
@@ -37,14 +50,18 @@ body{
 
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
+    
+    0%{
+        background-size: 100%;
     }
     50% {
-        background-position: 100% 50%;
+        background-size: 300%;
     }
     100% {
-        background-position: 0% 50%;
+        background-size: 100%;
     }
-}
+}   
+    
+    
+
 

@@ -39,7 +39,7 @@ function memory (){
             console.log(numeroUser);
         }
     }
-    numeriSpan.innerHTML =`hai indovinato ${numArr2.length} numeri: <br>${numArr2.join(' ')}`;
+    numeriSpan.innerHTML =`PORCO DDDIO BRAVO hai indovinato ${numArr2.length} numeri: <br>${numArr2.join(' ')}`;
 }// Funzione memory genera numeri scelti dall'utente.
 
 
