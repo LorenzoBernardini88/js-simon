@@ -31,17 +31,28 @@ setTimeout ( memory , 5000); //setTimeout per funzione memory.
 function memory (){
     numeriSpan.innerHTML = '';
     let numArr2 = [];
+    let numeroUser;
     for(i=0; i<numArr.length; i++){
-        let numeroUser = parseInt(prompt('Inserisci un numero compreso da 1 a 100'));
-        if(!numArr2.includes(numeroUser)){
+        numeroUser = parseInt(prompt('Inserisci un numero compreso da 1 a 100'));
+        if(numArr.includes(numeroUser)){
             numArr2.push(numeroUser);
-        }else{
-            i--;
+            console.log(numeroUser);
         }
     }
     numeriSpan.innerHTML = numArr2;
     console.log(numArr2);
-    if(numArr.sort().join() === numArr2.sort().join()){
-        console.log('stessi elementi');
-    }
-}// Funzione memory genera numeri scelti dall'utente.
+}
+
+// Funzione memory genera numeri scelti dall'utente.
+
+// let numMemory = [];
+//     for(i=0; i<5; i++){
+//         if(numArr.includes(numeroUser)){
+            
+//             console.log('hai indovinato');
+//             numeriSpan.innerHTML = '';
+//             numMemory.push(numArr);
+//             numeriSpan.innerHTML = numMemory;
+//             console.log(numMemory);
+//         }
+//     }
