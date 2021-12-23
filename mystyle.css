@@ -9,7 +9,6 @@ body{
     letter-spacing: 3px;
     line-height: 70px;
     background:transparent;
-    /* animation: gradient 15s ease infinite; */
 }
 body::before{
     background-image: url('sfondobello.gif');
@@ -22,7 +21,8 @@ body::before{
     top: 0;
     height: 100vh;
     width: 100vw;
-    /* transform: scale(1.5); */
+    animation: zoom 60s ease infinite;
+    background-position: center center;
 }
 
 #num_container{
@@ -49,7 +49,7 @@ body::before{
 
 
 
-@keyframes gradient {
+@keyframes zoom {
     
     0%{
         background-size: 100%;
