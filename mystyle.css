@@ -17,7 +17,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: ;
+    box-shadow: 0 10px 5px 5px rgba(138, 176, 81, 0.2),
+    inset 0 10px 15px rgba(138, 176, 81, 0.3),
+    inset 0 -10px 15px rgba(188, 214, 150,0.3);
 }
 
 
