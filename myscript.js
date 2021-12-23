@@ -19,7 +19,7 @@ function generaNum( numRandom ){ //Funzione che crea array numeri casuali .
         }
     }
     let container = document.getElementById('num_container');
-    container.innerHTML = `<span id="content">${numArr}</span>`;
+    container.innerHTML = `<span id="content">${numArr.join(' ')}</span>`;
 }
 
 generaNum(5);//Richiamo funzione generaNumeri.
@@ -39,8 +39,7 @@ function memory (){
             console.log(numeroUser);
         }
     }
-    numeriSpan.innerHTML = numArr2;
-    console.log(`hai indovinato ${numArr2.length} numeri`);
+    numeriSpan.innerHTML =`hai indovinato ${numArr2.length} numeri: <br>${numArr2.join(' ')}`;
 }// Funzione memory genera numeri scelti dall'utente.
 
 
