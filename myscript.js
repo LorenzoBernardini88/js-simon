@@ -41,18 +41,7 @@ function memory (){
     }
     numeriSpan.innerHTML = numArr2;
     console.log(numArr2);
-}
+}// Funzione memory genera numeri scelti dall'utente.
 
-// Funzione memory genera numeri scelti dall'utente.
 
-// let numMemory = [];
-//     for(i=0; i<5; i++){
-//         if(numArr.includes(numeroUser)){
-            
-//             console.log('hai indovinato');
-//             numeriSpan.innerHTML = '';
-//             numMemory.push(numArr);
-//             numeriSpan.innerHTML = numMemory;
-//             console.log(numMemory);
-//         }
-//     }
+
