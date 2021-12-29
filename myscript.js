@@ -28,18 +28,21 @@ console.log(numArr);
 let numeriSpan = document.getElementById('content'); //Richiamo elemento span creato con funzione generaNum.
 
 setTimeout ( memory , 5000); //setTimeout per funzione memory.
+
 function memory (){
+    
     numeriSpan.innerHTML = '';
     let numArr2 = [];
     let numeroUser;
+    
     for(i=0; i<numArr.length; i++){
         numeroUser = parseInt(prompt('Inserisci un numero compreso da 1 a 100'));
         if(numArr.includes(numeroUser)){
             numArr2.push(numeroUser);
             console.log(numeroUser);
         }
-    }
-    numeriSpan.innerHTML =`Hai indovinato ${numArr2.length} numeri: <br>${numArr2.join(' ')}`;
+    
+    }numeriSpan.innerHTML =`Hai indovinato ${numArr2.length} numeri: <br>${numArr2.join(' ')}`;
 }// Funzione memory genera numeri scelti dall'utente.
 
 

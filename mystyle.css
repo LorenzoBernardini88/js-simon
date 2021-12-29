@@ -47,20 +47,8 @@ body::before{
     color: #bdf26d;
 }
 
-
-
-@keyframes zoom {
     
-    0%{
-        background-size: 100%;
-    }
-    50% {
-        background-size: 300%;
-    }
-    100% {
-        background-size: 100%;
-    }
-}   
+
     
     
 
